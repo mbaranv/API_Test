@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                sh 'javac /home/ec2-user/API_Test/src/test/java/allRequest/Hello.java'
+                sh 'javac Hello.java'
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                sh 'java /home/ec2-user/API_Test/src/test/java/allRequest/Hello.java'
+                sh 'java Hello'
             }
         }
     }
