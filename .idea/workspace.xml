@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73f95865-36d0-4b6e-8b90-3b8c5ea50e0c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile2" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner.GET_TC001_GetAllUsers">
+  <component name="RunManager" selected="JUnit.UserService.GET_TC001_GetAllUsers">
     <configuration name="Runner.GET_TC001_GetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,8 +90,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserService.GET_TC001_GetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allRequest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="allRequest" />
+      <option name="MAIN_CLASS_NAME" value="allRequest.UserService" />
+      <option name="METHOD_NAME" value="GET_TC001_GetAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserService.GET_TC001_GetAllUsers" />
         <item itemvalue="JUnit.Runner.GET_TC001_GetAllUsers" />
         <item itemvalue="JUnit.TestSuite" />
       </list>
