@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                bat 'javac -cp C:/ProgramData/Jenkins/.jenkins/workspace/APITest02/src/test/java/allRequest/UserService.java'
+                bat 'javac -cp UserService.java'
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'java -cp C:/ProgramData/Jenkins/.jenkins/workspace/APITest02/src/test/java/allRequest/UserService.java'
+                bat 'java -cp UserService'
             }
         }
     }
