@@ -4,7 +4,6 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                bat 'mvn install clean test'
                 bat 'javac javac src\\test\\java\\allRequest\\UserService.java'
             }
         }
