@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                bat 'javac -cp src/test/java/allRequest/UserService.java'
+                bat 'mybat.bat'
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'java -cp src/test/java/allRequest/UserService.java'
+                sh 'java UserService'
             }
         }
     }
