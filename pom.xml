@@ -104,7 +104,6 @@
 
 <profiles>
     <profile>
-    <id>UserService</id>
         <build>
             <plugins>
                 <plugin>
@@ -112,14 +111,6 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>3.0.0-M3</version>
                         <configuration>
-
-                            <parallel>methods</parallel>
-                            <perCoreThreadCount>true</perCoreThreadCount>
-                            <threadCountMethods>10</threadCountMethods>
-
-                            <includes>
-                                <include>**allRequest/UserService.java</include>
-                            </includes>
                             <testFailureIgnore>false</testFailureIgnore>
                         </configuration>
                 </plugin>

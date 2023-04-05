@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn -f pom.xml clean test -Dtest=UserService'
+                sh 'mvn -f pom.xml clean test'
             }
             post {
                 always {
