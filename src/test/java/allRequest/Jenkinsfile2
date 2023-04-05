@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                sh 'javac home/ec2-user/API_Test/src/test/java/allRequest/Hello.java'
+                sh 'javac home\\ec2-user\\API_Test\\src\\test\\java\\allRequest\\Hello.java'
             }
         }
         stage('run') {
