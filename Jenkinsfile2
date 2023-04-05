@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                bat 'javac -cp UserService.java'
+                javac -cp UserService.java
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'java -cp UserService'
+                java -cp UserService
             }
         }
     }
