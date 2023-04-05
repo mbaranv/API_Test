@@ -1,16 +1,20 @@
 pipeline {
     agent any
+    tools {
+            maven 'Maven'
+    }
+    }
     stages {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                bat 'javac javac src\\test\\java\\allRequest\\UserService.java'
+                bat 'javac src\\test\\java\\allRequest\\UserService.java'
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'java javac src\\test\\java\\allRequest\\UserService'
+                bat 'java src\\test\\java\\allRequest\\UserService'
             }
         }
     }
