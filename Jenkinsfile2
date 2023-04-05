@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                javac -cp UserService.java
+                javac -cp 'UserService.java'
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                java -cp UserService
+                java -cp 'UserService'
             }
         }
     }
