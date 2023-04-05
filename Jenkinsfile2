@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                sh 'javac UserService.java'
+                sh 'javac API_Test/src/test/java/allRequest/UserService.java'
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                sh 'java UserService'
+                sh 'java API_Test/src/test/java/allRequest/UserService.java'
             }
         }
     }
