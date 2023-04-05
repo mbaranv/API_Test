@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -f pom.xml -B -DskipTests clean package'
+                sh 'mvn -f java/pom.xml -B -DskipTests clean package'
             }
             post {
                 success {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn -f pom.xml test'
+                sh 'mvn -f java/pom.xml test'
             }
             post {
                 always {
