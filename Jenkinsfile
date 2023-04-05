@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -f hello-app/pom.xml -B -DskipTests clean package'
+                sh 'mvn -f pom.xml -B -DskipTests clean package'
             }
             post {
                 success {
@@ -14,11 +14,11 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn -f hello-app/pom.xml test'
+                sh 'mvn -f pom.xml test'
             }
             post {
                 always {
-                    junit 'hello-app/target/surefire-reports/*.xml'
+                    junit 'API_Test/target/surefire-reports/reports.xml'
                 }
             }
         }
