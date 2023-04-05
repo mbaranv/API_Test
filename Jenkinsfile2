@@ -13,7 +13,7 @@ pipeline {
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'java src\\test\\java\\allRequest\\UserService'
+                bat 'mvn exec:java -Dexec.mainClass="allRequest.UserService"'
             }
         }
     }
