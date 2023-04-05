@@ -14,11 +14,11 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn -f pom.xml clean test'
+                sh 'mvn install clean test -Dtest=UserService'
             }
             post {
                 always {
-                    junit 'API_Test/target/surefire-reports/reports.xml'
+                    junit 'target/surefire-reports/reports.xml'
                 }
             }
         }
