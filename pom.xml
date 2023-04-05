@@ -118,7 +118,7 @@
                             <threadCountMethods>10</threadCountMethods>
 
                             <includes>
-                                <include>**/UserService.java</include>
+                                <include>**allRequest/UserService.java</include>
                             </includes>
                             <testFailureIgnore>false</testFailureIgnore>
                         </configuration>
