@@ -18,5 +18,12 @@ pipeline {
 
             }
         }
+           stage('report') {
+                    steps {
+                        echo 'Running the compiled java code.'
+                        bat 'junit "**/target/surefire-reports/*.xml"'
+
+                    }
+                }
     }
 }
