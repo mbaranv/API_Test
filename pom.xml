@@ -201,7 +201,9 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>allRequest/UserService</mainClass>
+                                    <addClasspath>true</addClasspath>
+                                    <classpathPrefix>lib/</classpathPrefix>
+                                    <mainClass>allRequest.UserService</mainClass>
                                 </manifest>
                             </archive>
                         </configuration>
