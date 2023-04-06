@@ -13,12 +13,12 @@ pipeline {
                 bat 'mvn test'
 
             }
-                  stage('package') {
-                        steps {
-                            echo 'Packing the tested java code.'
-                            bat 'mvn package'
-                        }
         }
+                stage('package') {
+                                steps {
+                                    echo 'Packing the tested java code.'
+                                    bat 'mvn package'
+                                }
     }
 }
 }
