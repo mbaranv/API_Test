@@ -1,23 +1,23 @@
 pipeline {
     agent any
-    tools {
-            maven 'maven-3.8.3'
-    }
     stages {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
                 bat 'mvn compile'
-                echo 'Creating jar'
-                bat 'mvn package'
             }
         }
-        stage('run') {
+        stage('test') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'java -cp API_Test-1.0-SNAPSHOT.jar allRequest.UserService'
+                bat 'mvn test'
 
             }
+                  stage('package') {
+                        steps {
+                            echo 'Packing the tested java code.'
+                            bat 'mvn package'
+                        }
         }
     }
 }

@@ -9,44 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">6.918</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">UserService</td><td><a href="#m0">null</a></td><td rowspan="1">1680749638892</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">UserService</td><td><a href="#m1">GET_TC001_GetAllUsers</a></td><td rowspan="1">1680749632097</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">GET_TC001_GetAllUsers2</a></td><td rowspan="1">1680749632105</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">allRequest.ABC</td><td><a href="#m0">abc</a></td><td rowspan="1">1680787530570</td><td rowspan="1">21</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">UserService#null</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
-  (Session info: chrome=112.0.5615.49)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2c3ef2700b686faed597a6757e3d4201, findElement {using=id, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Baran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49485/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2c3ef2700b686faed597a6757e3d4201
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at utilities.TestConfiguration.setDriver(TestConfiguration.java:41)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">UserService#GET_TC001_GetAllUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">UserService#GET_TC001_GetAllUsers2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">allRequest.ABC#abc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
