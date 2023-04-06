@@ -15,7 +15,7 @@ pipeline {
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'java -jar target/API_Test-1.0-SNAPSHOT.jar'
+                bat 'java -jar target/API_Test-1.0-SNAPSHOT.jar allRequest.UserService'
 
             }
         }
