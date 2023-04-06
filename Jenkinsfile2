@@ -4,20 +4,20 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                sh 'mvn compile'
+                bat 'mvn compile'
             }
         }
         stage('test') {
             steps {
                 echo 'Running the compiled java code.'
-                sh 'mvn test'
+                bat 'mvn test'
 
             }
         }
                 stage('package') {
                                 steps {
                                     echo 'Packing the tested java code.'
-                                    sh 'mvn package'
+                                    bat 'mvn package'
                                 }
     }
 }
