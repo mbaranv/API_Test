@@ -165,7 +165,7 @@
                             <threadCountMethods>10</threadCountMethods>
                             <reportsDirectory>target/surefire-reports/</reportsDirectory>
                             <includes>
-                                <include>**allRequest/UserService.java</include>
+                                <include>**allRequest/allRequest.UserService.java</include>
                             </includes>
                             <testFailureIgnore>false</testFailureIgnore>
                         </configuration>
@@ -188,7 +188,7 @@
                             <threadCountMethods>10</threadCountMethods>
                             <reportsDirectory>target/surefire-reports/</reportsDirectory>
                             <includes>
-                                <include>**/UserService.java</include>
+                                <include>**/allRequest.UserService.java</include>
                             </includes>
                             <testFailureIgnore>false</testFailureIgnore>
                         </configuration>

@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="73f95865-36d0-4b6e-8b90-3b8c5ea50e0c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile2" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/allRequest/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/API_Test-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/API_Test-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/META-INF/maven/org.example/API_Test/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/META-INF/maven/org.example/API_Test/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/allRequest/UserService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,9 @@
       <recent name="C:\Users\Baran\Downloads\CapstoneProject (2)\API_Test" />
       <recent name="C:\Users\Baran\Downloads\CapstoneProject (2)\API_Test\src\test\java" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -102,12 +105,12 @@
       <module name="API_Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="allRequest.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="allRequest" />
-      <option name="MAIN_CLASS_NAME" value="allRequest.UserService" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserService" />
       <option name="METHOD_NAME" value="GET_TC001_GetAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">

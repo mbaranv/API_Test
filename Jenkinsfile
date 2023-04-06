@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn install clean test -Dtest=UserService'
+                sh 'mvn install clean test -Dtest=allRequest.UserService'
             }
             post {
                 always {
