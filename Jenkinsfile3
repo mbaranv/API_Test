@@ -7,16 +7,10 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                bat 'mvn compile'
+           bat 'mvn test'
 
             }
         }
-        stage('run') {
-            steps {
-                echo 'Running the compiled java code.'
-                bat 'mvn test -Dtest=UserService'
 
-            }
-        }
     }
 }
