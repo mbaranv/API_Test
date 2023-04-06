@@ -8,6 +8,7 @@ pipeline {
             steps {
                 echo 'Compiling the java source code'
                 bat 'mvn compile'
+                bat 'mvn package'
             }
         }
         stage('run') {
