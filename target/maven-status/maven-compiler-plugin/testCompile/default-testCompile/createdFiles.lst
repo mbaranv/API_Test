@@ -1,6 +1,7 @@
 datasPojo\UserServicePojo.class
-allRequest\ABC.class
+allRequest\Testikp.class
 utilities\JsonToJava.class
 utilities\TestConfiguration.class
 allRequest\UserService.class
 utilities\ConfigReader.class
+allRequest\ABC.class
