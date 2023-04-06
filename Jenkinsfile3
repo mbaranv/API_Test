@@ -14,7 +14,7 @@ pipeline {
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                bat 'mvn test -Dtest=UserService'
+                bat 'mvn test'
 
             }
         }
