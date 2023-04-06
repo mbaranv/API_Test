@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: allRequest.UserService
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.913 s <<< FAILURE! - in allRequest.UserService
+allRequest.UserService  Time elapsed: 11.911 s  <<< ERROR!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'W', no possible valid JSON value or punctuation could be recognized.
+
