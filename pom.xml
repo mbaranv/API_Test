@@ -201,7 +201,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>allRequest.UserService</mainClass>
+                                    <mainClass>allRequest/UserService</mainClass>
                                 </manifest>
                             </archive>
                         </configuration>
