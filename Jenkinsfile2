@@ -12,6 +12,7 @@ pipeline {
                 echo 'Running the compiled java code.'
                 bat 'mvn test'
 
+
             }
         }
                 stage('package') {
