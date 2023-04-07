@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-07T04:16:22 EET" name="Surefire suite" finished-at="2023-04-07T04:16:44 EET" duration-ms="22759">
+  <suite started-at="2023-04-07T04:23:13 EET" name="Surefire suite" finished-at="2023-04-07T04:23:36 EET" duration-ms="22696">
     <groups>
     </groups>
-    <test started-at="2023-04-07T04:16:22 EET" name="Surefire test" finished-at="2023-04-07T04:16:44 EET" duration-ms="22759">
+    <test started-at="2023-04-07T04:23:13 EET" name="Surefire test" finished-at="2023-04-07T04:23:36 EET" duration-ms="22696">
       <class name="allRequest.ABC">
-        <test-method signature="test()" started-at="2023-04-07T04:16:22 EET" name="test" finished-at="2023-04-07T04:16:22 EET" duration-ms="30" status="PASS">
+        <test-method signature="test()" started-at="2023-04-07T04:23:13 EET" name="test" finished-at="2023-04-07T04:23:13 EET" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
       </class> <!-- allRequest.ABC -->
       <class name="allRequest.UserService">
-        <test-method signature="GET_TC001_GetAllUsers()" started-at="2023-04-07T04:16:22 EET" name="GET_TC001_GetAllUsers" finished-at="2023-04-07T04:16:42 EET" duration-ms="19776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GET_TC001_GetAllUsers -->
-        <test-method signature="GET_TC001_GetAllUsers2()" started-at="2023-04-07T04:16:22 EET" name="GET_TC001_GetAllUsers2" finished-at="2023-04-07T04:16:44 EET" duration-ms="22557" status="PASS">
+        <test-method signature="GET_TC001_GetAllUsers2()" started-at="2023-04-07T04:23:13 EET" name="GET_TC001_GetAllUsers2" finished-at="2023-04-07T04:23:36 EET" duration-ms="22525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GET_TC001_GetAllUsers2 -->
+        <test-method signature="GET_TC001_GetAllUsers()" started-at="2023-04-07T04:23:13 EET" name="GET_TC001_GetAllUsers" finished-at="2023-04-07T04:23:33 EET" duration-ms="19780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GET_TC001_GetAllUsers -->
       </class> <!-- allRequest.UserService -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
