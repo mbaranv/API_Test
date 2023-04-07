@@ -11,7 +11,7 @@ pipeline {
            stage('postman') {
                     steps {
 
-                               bat 'C:/Users/Baran/AppData/Roaming/npm/newman run C:/Users/Baran/Desktop/postmancollection.json'
+                               bat 'newman run C:/Users/Baran/Desktop/postmancollection.json'
                                 }
 
                 }
