@@ -3,23 +3,25 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Compiling the java source code'
+               echo 'Compiling the java source code'
                 bat 'mvn compile'
-            }
-        }
+                }
+             }
+
         stage('test') {
             steps {
                 echo 'Running the compiled java code.'
                 bat 'mvn test'
+                }
+             }
 
-
-            }
+        stage('report') {
+            steps {
+                junit(
+                      allowEmptyResults: true,
+                      testResults: '**/target/surefire-reports/*.xml'
+                     )
+                }
+             }
+           }
         }
-                stage('package') {
-                                steps {
-                                    echo 'Packing the tested java code.'
-                                    bat 'mvn package'
-                                }
-    }
-}
-}
