@@ -17,14 +17,14 @@ pipeline {
 
         stage('Reports') {
             steps {
-                step {
+                script {
                 echo  'JUnit reporting the test results'
                 junit(
                       allowEmptyResults: true,
                       testResults: '**/target/surefire-reports/*.xml'
                      )
                   }
-                step {
+                script {
                 echo  'Postman reporting the test results'
                 bat 'C:/Users/Baran/AppData/Roaming/npm/newman run C:/Users/Baran/Desktop/collectionpostman.json'
                   }
