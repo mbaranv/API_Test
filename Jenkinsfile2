@@ -1,27 +1,33 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                echo 'Compiling the java source code'
                 bat 'mvn compile'
                 }
              }
 
-        stage('test') {
+        stage('Test') {
             steps {
                 echo 'Running the compiled java code.'
                 bat 'mvn test'
                 }
              }
 
-        stage('report') {
+        stage('Reports') {
             steps {
-                echo  'Reporting the test results'
+                step {
+                echo  'JUnit reporting the test results'
                 junit(
                       allowEmptyResults: true,
                       testResults: '**/target/surefire-reports/*.xml'
                      )
+                  }
+                step {
+                echo  'Postman reporting the test results'
+                bat 'C:/Users/Baran/AppData/Roaming/npm/newman run C:/Users/Baran/Desktop/collectionpostman.json'
+                  }
                 }
              }
            }
