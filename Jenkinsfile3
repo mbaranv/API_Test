@@ -21,7 +21,7 @@ pipeline {
         }
            stage('report') {
                     steps {
-                            steps {
+
                                     // Test aşaması
                                     // Test çerçevesinden gelen sonuçları toplamak için report-aggregate eklentisini kullanabilirsiniz
                                     reportAggregate(
@@ -33,7 +33,7 @@ pipeline {
                                         ]
                                     )
                                 }
-                    }
+
                 }
     }
 }
