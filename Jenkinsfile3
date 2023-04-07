@@ -2,8 +2,7 @@ pipeline {
     agent any
     tools {
             maven 'maven-3.8.3'
-            jdk 'jdk8'
-            junit 'junit'
+
     }
     stages {
         stage('build') {
@@ -22,9 +21,18 @@ pipeline {
         }
            stage('report') {
                     steps {
-                        echo 'Running the compiled java code.'
-                        bat 'junit "**/target/surefire-reports/*.xml"'
-
+                            steps {
+                                    // Test aşaması
+                                    // Test çerçevesinden gelen sonuçları toplamak için report-aggregate eklentisini kullanabilirsiniz
+                                    reportAggregate(
+                                        testResults: [
+                                            junit(
+                                                allowEmptyResults: true,
+                                                testResults: '**/target/surefire-reports/*.xml'
+                                            )
+                                        ]
+                                    )
+                                }
                     }
                 }
     }
