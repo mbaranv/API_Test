@@ -24,11 +24,12 @@ pipeline {
 
                                     // Test aşaması
                                     // Test çerçevesinden gelen sonuçları toplamak için report-aggregate eklentisini kullanabilirsiniz
-                                    reportAggregate(
-                                        testResults: [
 
-                                        ]
-                                    )
+                                            junit(
+                                                allowEmptyResults: true,
+                                                testResults: '**/target/surefire-reports/*.xml'
+                                            )
+
                                 }
 
                 }
