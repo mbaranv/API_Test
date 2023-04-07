@@ -9,12 +9,7 @@ pipeline {
     stages {
         stage('Install Dependencies') {
           steps {
-            script {
-              def newmanVersion = "5.3.2" // Newman sürüm numarasını güncelleyin
-              def npmRegistry = "https://registry.npmjs.org/" // npm registry URL'sini gerektiğinde güncelleyin
-              bat "npm config set registry ${npmRegistry}"
-              bat "npm install -g newman@${newmanVersion}"
-            }
+          bat 'npm install -g newman'
           }
           }
         stage('build') {
