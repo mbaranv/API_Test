@@ -15,18 +15,18 @@ pipeline {
                 }
              }
 
-        stage('reports') {
+        stage('report') {
             steps {
-                echo  'JUnit Reporting the test results'
+                echo  'Reporting the test results'
                 junit(
                       allowEmptyResults: true,
                       testResults: '**/target/surefire-reports/*.xml'
                      )
                 }
-            steps {
-                echo  'Postman Reporting the test results'
-                bat 'C:/Users/Baran/AppData/Roaming/npm/newman run C:/Users/Baran/Desktop/postmancollection.json'
-                }
-            }
              }
+        stage('postman') {
+                echo 'Postman results'
+                bat 'C:/Users/Baran/AppData/Roaming/npm/newman run C:/Users/Baran/Desktop/postmancollection.json'
+        }
            }
+        }
