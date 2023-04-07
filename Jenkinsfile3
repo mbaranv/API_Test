@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools {
             maven 'maven-3.8.3'
+            newman 'newman-5.3.2'
 
     }
     stages {
@@ -19,17 +20,10 @@ pipeline {
 
             }
         }
-           stage('report') {
+           stage('postman') {
                     steps {
 
-                                    // Test aşaması
-                                    // Test çerçevesinden gelen sonuçları toplamak için report-aggregate eklentisini kullanabilirsiniz
-
-                                            junit(
-                                                allowEmptyResults: true,
-                                                testResults: '**/target/surefire-reports/*.xml'
-                                            )
-
+                                newman run C:/Users/Baran/Desktop/oss_postman.json
                                 }
 
                 }
