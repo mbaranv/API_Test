@@ -24,9 +24,5 @@ pipeline {
                      )
                 }
              }
-        stage('postman') {
-                echo 'Postman results'
-                bat 'C:/Users/Baran/AppData/Roaming/npm/newman run C:/Users/Baran/Desktop/postmancollection.json'
-        }
            }
         }
