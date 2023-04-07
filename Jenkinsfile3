@@ -2,9 +2,16 @@ pipeline {
     agent any
     tools {
             maven 'maven-3.8.3'
-            newman 'newman-5.3.2'
+            nodejs 'nodejs'
 
     }
+    script {
+      def newmanVersion = "5.3.2" // Newman sürüm numarasını güncelleyin
+      def npmRegistry = "https://registry.npmjs.org/" // npm registry URL'sini gerektiğinde güncelleyin
+      sh "npm config set registry ${npmRegistry}"
+      sh "npm install -g newman@${newmanVersion}"
+    }
+
     stages {
         stage('build') {
             steps {
