@@ -2,10 +2,9 @@ package allRequest;
 
 import org.junit.Test;
 
-public class ABC {
-
+public class Test02 {
     @Test
     public void test(){
-        System.out.println("selammm");
+        System.out.println("aleykümselamm");
     }
 }
