@@ -6,26 +6,8 @@ pipeline {
 
     }
 
-    stages {
-        stage('Install Dependencies') {
-          steps {
-          bat 'npm install -g newman'
-          }
-          }
-        stage('build') {
-            steps {
-                echo 'Compiling the java source code'
-                bat 'mvn compile'
 
-            }
-        }
-        stage('run') {
-            steps {
-                echo 'Running the compiled java code.'
-                bat 'mvn test'
 
-            }
-        }
            stage('postman') {
                     steps {
 
