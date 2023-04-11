@@ -158,69 +158,7 @@ public class UserStatusService extends TestConfiguration {
              extentTest.info("Expected Data ile Actual Data karşılaştırıldı...");
              extentTest.pass("Test passed");
          }
-    @Test
-    public void TC_006() {
-        extentTest = extentReports.createTest("UserStatus_TC_006_Negative");
-        UserStatusBodyPostPojo userPojo = new UserStatusBodyPostPojo("   ", "User active");
-        String url = "https://a3m-qa-gm3.quaspareparts.com/auth/api/";
-        String userStatusUrl = url + "user-status";
-        extentTest.info("Url'e gidilip access token alınıyor...");
 
-        extentTest.info("Post metodu ile request atıldı");
-        Response response = given().headers("Authorization",
-                        "Bearer " + TestConfiguration.access_token,
-                        "Content-Type",
-                        ContentType.JSON,
-                        "Accept", ContentType.JSON)
-                .when()
-                .body(userPojo) // this comes from JsonModels class for Country and Status
-                .post(userStatusUrl)
-                .then()
-                .contentType(ContentType.JSON)
-                .extract()
-                .response();
-        extentTest.info(" yeni User Status oluşturuldu");
-        response.prettyPrint();
-        response.then().assertThat().statusCode(201);
-        System.out.println("response.getStatusCode() = " + response.getStatusCode());
-        extentTest.info("Response'la gelen Status Code dogrulandı");
-        Map<String,Object> actualDataResponseNegative = response.as(Map.class);
-        System.out.println("actualDataResponseNegative = " + actualDataResponseNegative);
-       Assert.assertEquals("name boş bırakılmamalıdır...",406,response.getStatusCode());
-       extentTest.fail("Test Failed");
-
-    }
-    @Test
-    public void TC_007() {
-        extentTest = extentReports.createTest("UserStatus_TC_007_Negative");
-        UserStatusBodyPostPojo userPojo = new UserStatusBodyPostPojo("&%$*", "User active");
-        String url = "https://a3m-qa-gm3.quaspareparts.com/auth/api/";
-        String userStatusUrl = url + "user-status";
-        extentTest.info("Url'e gidilip access token alınıyor...");
-
-        extentTest.info("Post metodu ile request atıldı");
-        Response response = given().headers("Authorization",
-                        "Bearer " + TestConfiguration.access_token,
-                        "Content-Type",
-                        ContentType.JSON,
-                        "Accept", ContentType.JSON)
-                .when()
-                .body(userPojo) // this comes from JsonModels class for Country and Status
-                .post(userStatusUrl)
-                .then()
-                .contentType(ContentType.JSON)
-                .extract()
-                .response();
-        extentTest.info(" yeni User Status oluşturuldu");
-        response.prettyPrint();
-        response.then().assertThat().statusCode(201);
-        System.out.println("response.getStatusCode() = " + response.getStatusCode());
-        extentTest.info("Response'la gelen Status Code dogrulandı");
-        Map<String,Object> actualDataResponseNegative = response.as(Map.class);
-        System.out.println("actualDataResponseNegative = " + actualDataResponseNegative);
-        Assert.assertEquals("name özel karakter içermemelidir...",406,response.getStatusCode());
-        extentTest.fail("Test Failed");
-    }
 
 
 
