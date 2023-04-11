@@ -12,6 +12,13 @@ pipeline {
             steps {
                 echo 'Running the compiled java code.'
                 bat 'mvn test -Dtest=CountryService'
+                bat 'mvn test -Dtest=MembershipService'
+                bat 'mvn test -Dtest=MembershipTypeService'
+                bat 'mvn test -Dtest=OrganizationService'
+                bat 'mvn test -Dtest=PermissionService'
+                bat 'mvn test -Dtest=RoleService'
+                bat 'mvn test -Dtest=UserService'
+                bat 'mvn test -Dtest=UserStatusService'
                 }
              }
 
