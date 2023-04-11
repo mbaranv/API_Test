@@ -11,6 +11,7 @@ import utilities.TestConfiguration;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
 
 public class MembershipTypeService extends TestConfiguration {
 
