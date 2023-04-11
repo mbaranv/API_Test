@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73f95865-36d0-4b6e-8b90-3b8c5ea50e0c" name="Changes" comment="" />
+    <list default="true" id="73f95865-36d0-4b6e-8b90-3b8c5ea50e0c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +84,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test01.test">
+  <component name="RunManager" selected="JUnit.CountryService.TC_001">
+    <configuration name="CountryService.TC_001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allRequest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="allRequest" />
+      <option name="MAIN_CLASS_NAME" value="allRequest.CountryService" />
+      <option name="METHOD_NAME" value="TC_001" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner.GET_TC001_GetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -136,6 +154,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountryService.TC_001" />
         <item itemvalue="JUnit.UserService.GET_TC001_GetAllUsers" />
         <item itemvalue="JUnit.TestSuite" />
         <item itemvalue="JUnit.Test01.test" />
